@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {BreakpointObserver} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ftc-excelsior';
+  title = 'FIRST Excelsior Home';
+  isSmall = false;
+
+  constructor(breakpointObserver: BreakpointObserver) {
+    breakpointObserver.observe(['(max-width:1200px)']).subscribe(result => {
+      if(result.matches) {
+        this.isSmall = true;
+        console.log(this.isSmall);
+      }
+    });
+    breakpointObserver.observe(['(min-width:1200px)']).subscribe(result => {
+      if(result.matches) {
+        this.isSmall = false;
+        console.log(this.isSmall);
+      }
+    });
+  }
+  
+  isScreenSmall(): boolean {
+    return this.isSmall;
+  }
+  
 }
