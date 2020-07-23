@@ -13,10 +13,10 @@
   <mdc-drawer-header title="Welcome to FIRST Excelsior!"></mdc-drawer-header>
   <mdc-drawer-content>
     <mdc-list>
-      <a mdc-list-item routerLink="/home" routerLinkActive="active">
+      <a mdc-list-item routerLink="/home" routerLinkActive="active" (click)="changeTitle('FIRST Excelsior Home')">
         <mdc-icon mdcListItemGraphic>home</mdc-icon>Home
       </a>
-      <a mdc-list-item routerLink="/helpdesk" routerLinkActive="active">
+      <a mdc-list-item routerLink="/helpdesk" routerLinkActive="active" (click)="changeTitle('FIRST Question and Answer')">
         <mdc-icon mdcListItemGraphic>question_answer</mdc-icon>Help Desk
       </a>
     </mdc-list>

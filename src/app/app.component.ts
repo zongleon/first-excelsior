@@ -17,7 +17,7 @@ export class AppComponent {
         console.log(this.isSmall);
       }
     });
-    breakpointObserver.observe(['(min-width:1200px)']).subscribe(result => {
+    breakpointObserver.observe(['(min-width:1199px)']).subscribe(result => {
       if(result.matches) {
         this.isSmall = false;
         console.log(this.isSmall);
@@ -27,6 +27,10 @@ export class AppComponent {
   
   isScreenSmall(): boolean {
     return this.isSmall;
+  }
+
+  changeTitle(t: string) {
+    this.title = t;
   }
   
 }

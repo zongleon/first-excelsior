@@ -4,6 +4,7 @@ import {MdcTopAppBarModule} from '@angular-mdc/web/top-app-bar';
 import {MdcIconModule} from '@angular-mdc/web/icon'
 import {MdcDrawerModule} from '@angular-mdc/web/drawer';
 import {MdcListModule} from '@angular-mdc/web/list';
+import {MdcCardModule} from '@angular-mdc/web/card';
 
 @NgModule({
   exports: [
@@ -12,7 +13,8 @@ import {MdcListModule} from '@angular-mdc/web/list';
     MdcTopAppBarModule,
     MdcIconModule,
     MdcDrawerModule,
-    MdcListModule
+    MdcListModule,
+    MdcCardModule
   ]
 })
 export class MaterialModule {}
