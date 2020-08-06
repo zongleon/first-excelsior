@@ -4,108 +4,28 @@
 
 .news-card {
   margin: 28px;
+  font-family: "Roboto", Times, serif;
 }
 
-.demo-card__primary {
-  padding: 1rem;
+.news-title {
+  margin: 16px 16px 8px 16px;
+  font-size: 32px;
+  font-weight: bold;
 }
-
-.demo-card__title {
-  margin: 0;
+.news-subtitle {
+  margin: 16px;  
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
 }
-
-.demo-card__subtitle {
-  @include theme.prop(color, text-secondary-on-background);
-
-  margin: 0;
+.news-date {
+  margin: 16px;
+  font-size: 20px;
+  color: #919191;
+  font-weight: normal;
+  font-style: italic;
 }
-
-.demo-card__secondary {
-  @include theme.prop(color, text-secondary-on-background);
-
-  padding: 0 1rem 8px 1rem;
-}
-
-.demo-card-article {
-  padding: 16px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.demo-card-article-group-heading {
-  @include theme.prop(color, text-secondary-on-light);
-
-  padding: 8px 16px;
-}
-
-.demo-card-article__title {
-  margin: 0 0 4px 0;
-}
-
-.article-content {
-  @include theme.prop(color, text-secondary-on-light);
-
-  margin: 0;
-}
-
-.demo-card--photo {
-  width: 200px;
-}
-
-.demo-card__media {
-  background-image: url(https://material-components-web.appspot.com/images/1-1.jpg);
-}
-
-.demo-card__media--16-9 {
-  background-image: url(https://material-components-web.appspot.com/images/16-9.jpg);
-}
-
-.demo-card__media-content--with-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.demo-card__media-title {
-  padding: 8px 16px;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
-  color: white;
-}
-
-.demo-card--music {
-  @include card.shape-radius(24px 4px);
-
-  @include rtl.rtl {
-    @include card.shape-radius(4px 24px);
-  }
-}
-
-.demo-card__music-row {
-  display: flex;
-  border-top-left-radius: inherit;
-
-  @include rtl.rtl {
-    border-top-left-radius: 0;
-    border-top-right-radius: inherit;
-  }
-}
-
-.demo-card__media--music {
-  width: 110px;
-  border-top-left-radius: inherit;
-
-  @include rtl.rtl {
-    border-top-left-radius: 0;
-    border-top-right-radius: inherit;
-  }
-}
-
-.demo-card__music-info {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 16px;
-}
-
-.demo-card__action-buttons--text-only {
-  margin-left: 8px;
+.news-content {
+  margin: 16px;
+  line-height: 1.5;
 }
